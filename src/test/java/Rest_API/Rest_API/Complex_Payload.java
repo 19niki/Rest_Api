@@ -25,4 +25,45 @@ public class Complex_Payload
 	 		+ "}\r\n"
 	 		+ "";
 }
+   
+   public static String addbookpayload(String isbn, String aisle)
+   {
+	   String payload = "{\r\n"
+	   		+ "\r\n"
+	   		+ "\"name\":\"Learn Appium Automation with Java selenium\",\r\n"
+	   		+ "\"isbn\":\""+isbn+"\",\r\n"
+	   		+ "\"aisle\":\""+aisle+"\",\r\n"
+	   		+ "\"author\":\"John doe\"\r\n"
+	   		+ "}";
+	   
+	   return payload;
+   }
+   
+   public static String deletebook(String id)
+   {
+	 String delete = "{\r\n"
+	 		+ " \r\n"
+	 		+ "\"ID\" : \""+id+"\"\r\n"
+	 		+ " \r\n"
+	 		+ "} \r\n"
+	 		+ " "   ;
+	 
+	 return delete;
+	 
+   }
+   
+   public static String addcomment(String comm)
+   {
+	   String comment = "{\r\n"
+	   		+ "    \"body\": \""+comm+"\",\r\n"
+	   		+ "    \"visibility\": {\r\n"
+	   		+ "        \"type\": \"role\",\r\n"
+	   		+ "        \"value\": \"Administrators\"\r\n"
+	   		+ "    }\r\n"
+	   		+ "}";
+	   
+	   return comment;
+   }
+   
+   
 }

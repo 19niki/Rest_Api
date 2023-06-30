@@ -40,6 +40,7 @@ public class Base_API1 {
 	       .when().put("/maps/api/place/update/json")
 	       .then().log().all().assertThat().statusCode(200).body("msg", equalTo("Address successfully updated"));
 	
+	
 	String address= "80 Summer walk, USA";
 	// validting the address using get
 	String placres = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", "5f221f069b51e221063a9b75f5b814c0")
